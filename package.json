@@ -1,0 +1,30 @@
+{
+  "name": "FactorySim",
+  "description": "A simple linear bottling line simulation using node-red.",
+  "version": "0.0.1",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.nukon.com.au/tillit/node-red-water-sim.git"
+  },
+  "keywords": [
+    "node",
+    "node-red",
+    "influxdb"
+  ],
+  "author": "Nukon",
+  "license": "Copyright (C) Nukon, All Rights Reserved",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-red": "^0.20.5",
+    "node-red-contrib-fsm": "^0.0.6",
+    "node-red-contrib-influxdb": "^0.2.1",
+    "node-red-contrib-process-env": "^0.1.5",
+    "node-red-contrib-slack": "^0.1.2",
+    "node-red-dashboard": "^2.6.2",
+    "node-red-node-random": "^0.0.8"
+  }
+}
