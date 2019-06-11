@@ -1,0 +1,1901 @@
+[
+    {
+        "id": "9c7c9b84.b72108",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "a8521463.9cb508",
+        "type": "s7comm",
+        "z": "",
+        "ip": "192.168.17.1",
+        "port": "102",
+        "rack": "0",
+        "slot": "2",
+        "payload": [
+            {
+                "S7_Type": "DB",
+                "S7_DBnum": "61",
+                "S7_Datatype": "R",
+                "S7_Offset": "30",
+                "S7_BitOffset": "0",
+                "S7_Quantity": "1",
+                "S7_Name": "Wast Sludge Tank"
+            },
+            {
+                "S7_Type": "DB",
+                "S7_DBnum": "61",
+                "S7_Datatype": "R",
+                "S7_Offset": "68",
+                "S7_BitOffset": "0",
+                "S7_Quantity": "1",
+                "S7_Name": "Flow Balance Tank"
+            },
+            {
+                "S7_Type": "DB",
+                "S7_DBnum": "61",
+                "S7_Datatype": "R",
+                "S7_Offset": "106",
+                "S7_BitOffset": "0",
+                "S7_Quantity": "1",
+                "S7_Name": "Reactor"
+            },
+            {
+                "S7_Type": "DB",
+                "S7_DBnum": "65",
+                "S7_Datatype": "R",
+                "S7_Offset": "30",
+                "S7_BitOffset": "0",
+                "S7_Quantity": "1",
+                "S7_Name": "Chlorine Tank"
+            }
+        ]
+    },
+    {
+        "id": "cd668c7d.6697",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "8f052ddd.780f8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Waste Sludge",
+        "tab": "cd668c7d.6697",
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "ae148202.bc7f1",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "c2236d83.26c02",
+        "type": "ui_group",
+        "z": "",
+        "name": "Flow Balance",
+        "tab": "cd668c7d.6697",
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "aae92494.d6cf58",
+        "type": "ui_group",
+        "z": "",
+        "name": "Reactor",
+        "tab": "cd668c7d.6697",
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "8170901c.ac0cc",
+        "type": "ui_group",
+        "z": "",
+        "name": "Chlorine ",
+        "tab": "cd668c7d.6697",
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "ef99c7ab.74c638",
+        "type": "inject",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 120,
+        "y": 320,
+        "wires": [
+            [
+                "84c9799a.8b0e78"
+            ]
+        ]
+    },
+    {
+        "id": "84c9799a.8b0e78",
+        "type": "s7comm read",
+        "z": "9c7c9b84.b72108",
+        "connection": "a8521463.9cb508",
+        "payload": "{\"S7_Type\":\"DB\",\"S7_DBnum\":\"61\",\"S7_Datatype\":\"R\",\"S7_Offset\":\"68\",\"S7_BitOffset\":\"0\",\"S7_Quantity\":\"1\",\"S7_Name\":\"Flow Balance Tank\"}",
+        "s7Name": "Flow Balance Tank",
+        "topic": "",
+        "name": "Flow Balance Read",
+        "signalSetted": false,
+        "none": "true",
+        "repeat": "",
+        "once": false,
+        "x": 350,
+        "y": 340,
+        "wires": [
+            [
+                "c71f670b.9ea6b8",
+                "a453551.68feca8"
+            ]
+        ]
+    },
+    {
+        "id": "e92d7b52.a50278",
+        "type": "debug",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 730,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "6539302e.c7fa1",
+        "type": "comment",
+        "z": "9c7c9b84.b72108",
+        "name": "Fill Flow Balance Tanks",
+        "info": "Start Sequence",
+        "x": 140,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "c71f670b.9ea6b8",
+        "type": "switch",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "property": "payload.value[0]",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lt",
+                "v": "lit02HighLimit",
+                "vt": "global"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 530,
+        "y": 340,
+        "wires": [
+            [
+                "e92d7b52.a50278",
+                "3ade7d7.7aea982"
+            ]
+        ]
+    },
+    {
+        "id": "3ade7d7.7aea982",
+        "type": "function",
+        "z": "9c7c9b84.b72108",
+        "name": "Increment value",
+        "func": "msg.payload = {\"value\":[msg.payload.value[0] + 0.1]}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 270,
+        "y": 440,
+        "wires": [
+            [
+                "129eda0f.277f86"
+            ]
+        ]
+    },
+    {
+        "id": "129eda0f.277f86",
+        "type": "s7comm write",
+        "z": "9c7c9b84.b72108",
+        "connection": "a8521463.9cb508",
+        "payload": "{\"S7_Type\":\"DB\",\"S7_DBnum\":\"61\",\"S7_Datatype\":\"R\",\"S7_Offset\":\"68\",\"S7_BitOffset\":\"0\",\"S7_Quantity\":\"1\",\"S7_Name\":\"Flow Balance Tank\"}",
+        "s7Name": "Flow Balance Tank",
+        "topic": "",
+        "name": "Flow Balance Write",
+        "signalSetted": false,
+        "x": 490,
+        "y": 440,
+        "wires": [
+            [
+                "95d30a14.beb8d8"
+            ]
+        ]
+    },
+    {
+        "id": "95d30a14.beb8d8",
+        "type": "delay",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 660,
+        "y": 440,
+        "wires": [
+            [
+                "84c9799a.8b0e78"
+            ]
+        ]
+    },
+    {
+        "id": "7d841190.bf343",
+        "type": "comment",
+        "z": "9c7c9b84.b72108",
+        "name": "Emty Flow Balance Tanks",
+        "info": "Start Sequence",
+        "x": 130,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "b3fe9e49.047a2",
+        "type": "inject",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 140,
+        "y": 880,
+        "wires": [
+            [
+                "6a6bc975.308148"
+            ]
+        ]
+    },
+    {
+        "id": "6a6bc975.308148",
+        "type": "s7comm read",
+        "z": "9c7c9b84.b72108",
+        "connection": "a8521463.9cb508",
+        "payload": "{\"S7_Type\":\"DB\",\"S7_DBnum\":\"61\",\"S7_Datatype\":\"R\",\"S7_Offset\":\"68\",\"S7_BitOffset\":\"0\",\"S7_Quantity\":\"1\",\"S7_Name\":\"Flow Balance Tank\"}",
+        "s7Name": "Flow Balance Tank",
+        "topic": "",
+        "name": "Flow Balance Read",
+        "signalSetted": false,
+        "none": "true",
+        "repeat": "",
+        "once": false,
+        "x": 370,
+        "y": 900,
+        "wires": [
+            [
+                "f4d247a9.8b0968",
+                "a453551.68feca8"
+            ]
+        ]
+    },
+    {
+        "id": "4a067327.dc8b1c",
+        "type": "debug",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 670,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "f4d247a9.8b0968",
+        "type": "switch",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "property": "payload.value[0]",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "lit02LowLimit",
+                "vt": "global"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 550,
+        "y": 900,
+        "wires": [
+            [
+                "89237070.6513f",
+                "4a067327.dc8b1c"
+            ]
+        ]
+    },
+    {
+        "id": "89237070.6513f",
+        "type": "function",
+        "z": "9c7c9b84.b72108",
+        "name": "Decrement value",
+        "func": "msg.payload = {\"value\":[msg.payload.value[0] - 0.1]}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 300,
+        "y": 1000,
+        "wires": [
+            [
+                "4a86566f.a43888"
+            ]
+        ]
+    },
+    {
+        "id": "4a86566f.a43888",
+        "type": "s7comm write",
+        "z": "9c7c9b84.b72108",
+        "connection": "a8521463.9cb508",
+        "payload": "{\"S7_Type\":\"DB\",\"S7_DBnum\":\"61\",\"S7_Datatype\":\"R\",\"S7_Offset\":\"68\",\"S7_BitOffset\":\"0\",\"S7_Quantity\":\"1\",\"S7_Name\":\"Flow Balance Tank\"}",
+        "s7Name": "Flow Balance Tank",
+        "topic": "",
+        "name": "Flow Balance Write",
+        "signalSetted": false,
+        "x": 510,
+        "y": 1000,
+        "wires": [
+            [
+                "797f989.5de4968",
+                "59b313c9.93bfdc"
+            ]
+        ]
+    },
+    {
+        "id": "797f989.5de4968",
+        "type": "delay",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 520,
+        "y": 960,
+        "wires": [
+            [
+                "6a6bc975.308148"
+            ]
+        ]
+    },
+    {
+        "id": "859813c4.9aa76",
+        "type": "inject",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 1000,
+        "y": 340,
+        "wires": [
+            [
+                "59b313c9.93bfdc"
+            ]
+        ]
+    },
+    {
+        "id": "59b313c9.93bfdc",
+        "type": "s7comm read",
+        "z": "9c7c9b84.b72108",
+        "connection": "a8521463.9cb508",
+        "payload": "{\"S7_Type\":\"DB\",\"S7_DBnum\":\"61\",\"S7_Datatype\":\"R\",\"S7_Offset\":\"30\",\"S7_BitOffset\":\"0\",\"S7_Quantity\":\"1\",\"S7_Name\":\"Wast Sludge Tank\"}",
+        "s7Name": "Wast Sludge Tank",
+        "topic": "",
+        "name": "Waste Sludge Read",
+        "signalSetted": false,
+        "none": "true",
+        "repeat": "",
+        "once": false,
+        "x": 1240,
+        "y": 360,
+        "wires": [
+            [
+                "52c8d920.d465f8",
+                "e99e0c84.6d25f",
+                "65356972.d6d988"
+            ]
+        ]
+    },
+    {
+        "id": "65356972.d6d988",
+        "type": "debug",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1610,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "cd93cfe2.5dc23",
+        "type": "comment",
+        "z": "9c7c9b84.b72108",
+        "name": "Fill Waste Sludge Tanks",
+        "info": "Start Sequence",
+        "x": 1020,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "1b26fd8e.5868a2",
+        "type": "function",
+        "z": "9c7c9b84.b72108",
+        "name": "Increment value",
+        "func": "msg.payload = {\"value\":[msg.payload.value[0] + 0.1]}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1150,
+        "y": 460,
+        "wires": [
+            [
+                "b59e497d.b2b5d8"
+            ]
+        ]
+    },
+    {
+        "id": "b59e497d.b2b5d8",
+        "type": "s7comm write",
+        "z": "9c7c9b84.b72108",
+        "connection": "a8521463.9cb508",
+        "payload": "{\"S7_Type\":\"DB\",\"S7_DBnum\":\"61\",\"S7_Datatype\":\"R\",\"S7_Offset\":\"30\",\"S7_BitOffset\":\"0\",\"S7_Quantity\":\"1\",\"S7_Name\":\"Wast Sludge Tank\"}",
+        "s7Name": "Wast Sludge Tank",
+        "topic": "",
+        "name": "Waste Sludge Write",
+        "signalSetted": false,
+        "x": 1370,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6494bfd6.1e988",
+        "type": "comment",
+        "z": "9c7c9b84.b72108",
+        "name": "Emty Waste Sludge Tanks",
+        "info": "Start Sequence",
+        "x": 1030,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "334f20d8.ede",
+        "type": "inject",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 1040,
+        "y": 740,
+        "wires": [
+            [
+                "22932aeb.6ea8d6"
+            ]
+        ]
+    },
+    {
+        "id": "22932aeb.6ea8d6",
+        "type": "s7comm read",
+        "z": "9c7c9b84.b72108",
+        "connection": "a8521463.9cb508",
+        "payload": "{\"S7_Type\":\"DB\",\"S7_DBnum\":\"61\",\"S7_Datatype\":\"R\",\"S7_Offset\":\"30\",\"S7_BitOffset\":\"0\",\"S7_Quantity\":\"1\",\"S7_Name\":\"Wast Sludge Tank\"}",
+        "s7Name": "Wast Sludge Tank",
+        "topic": "",
+        "name": "Waste Sludge Read",
+        "signalSetted": false,
+        "none": "true",
+        "repeat": "",
+        "once": false,
+        "x": 1260,
+        "y": 700,
+        "wires": [
+            [
+                "9c095b1c.0eaa38",
+                "f950d8b5.191398",
+                "e99e0c84.6d25f"
+            ]
+        ]
+    },
+    {
+        "id": "9c095b1c.0eaa38",
+        "type": "debug",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1630,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "e5db6a4.d86f898",
+        "type": "function",
+        "z": "9c7c9b84.b72108",
+        "name": "Decrement value",
+        "func": "var value = msg.payload.value[0] - 0.1;\nmsg.payload = {\"value\":[parseFloat(value.toFixed(1))]}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1200,
+        "y": 860,
+        "wires": [
+            [
+                "495c6a41.61d134"
+            ]
+        ]
+    },
+    {
+        "id": "8b2247eb.126fe8",
+        "type": "delay",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "350",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 1590,
+        "y": 860,
+        "wires": [
+            [
+                "22932aeb.6ea8d6"
+            ]
+        ]
+    },
+    {
+        "id": "c67df9ce.7fcbb8",
+        "type": "comment",
+        "z": "9c7c9b84.b72108",
+        "name": "LIT02",
+        "info": "Start Sequence",
+        "x": 90,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "f4b043a4.b8995",
+        "type": "comment",
+        "z": "9c7c9b84.b72108",
+        "name": "LIT01",
+        "info": "Start Sequence",
+        "x": 970,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "ee61e62a.f5bcb8",
+        "type": "inject",
+        "z": "9c7c9b84.b72108",
+        "name": "Set params",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "x": 310,
+        "y": 180,
+        "wires": [
+            [
+                "39906cad.232ba4"
+            ]
+        ]
+    },
+    {
+        "id": "39906cad.232ba4",
+        "type": "function",
+        "z": "9c7c9b84.b72108",
+        "name": "set global limits",
+        "func": "global.set('lit01LowLimit', 0.1);\nglobal.set('lit01HighLimit', 3);\n\nglobal.set('lit02LowLimit', 0.1);\nglobal.set('lit02HighLimit', 3);\n\nglobal.set('lit03LowLimit', 0.1);\nglobal.set('lit03HighLimit', 3);",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 480,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1e8d54a0.f775eb",
+        "type": "inject",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 1860,
+        "y": 380,
+        "wires": [
+            [
+                "3cc94eda.b4cc52"
+            ]
+        ]
+    },
+    {
+        "id": "3cc94eda.b4cc52",
+        "type": "s7comm read",
+        "z": "9c7c9b84.b72108",
+        "connection": "a8521463.9cb508",
+        "payload": "{\"S7_Type\":\"DB\",\"S7_DBnum\":\"61\",\"S7_Datatype\":\"R\",\"S7_Offset\":\"106\",\"S7_BitOffset\":\"0\",\"S7_Quantity\":\"1\",\"S7_Name\":\"Reactor\"}",
+        "s7Name": "Reactor",
+        "topic": "",
+        "name": "Reactor Read",
+        "signalSetted": false,
+        "none": "true",
+        "repeat": "",
+        "once": false,
+        "x": 2080,
+        "y": 400,
+        "wires": [
+            [
+                "4bb16249.341abc",
+                "83a2dbbb.5a07c8"
+            ]
+        ]
+    },
+    {
+        "id": "4461fccd.078d34",
+        "type": "debug",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 2470,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "26d818bd.ba55b8",
+        "type": "comment",
+        "z": "9c7c9b84.b72108",
+        "name": "Fill Reactor",
+        "info": "Start Sequence",
+        "x": 1850,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "6fba546d.6781dc",
+        "type": "function",
+        "z": "9c7c9b84.b72108",
+        "name": "Increment value",
+        "func": "msg.payload = {\"value\":[msg.payload.value[0] + 0.1]}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 2010,
+        "y": 500,
+        "wires": [
+            [
+                "6cd798f9.5b9e38"
+            ]
+        ]
+    },
+    {
+        "id": "6cd798f9.5b9e38",
+        "type": "s7comm write",
+        "z": "9c7c9b84.b72108",
+        "connection": "a8521463.9cb508",
+        "payload": "{\"S7_Type\":\"DB\",\"S7_DBnum\":\"61\",\"S7_Datatype\":\"R\",\"S7_Offset\":\"106\",\"S7_BitOffset\":\"0\",\"S7_Quantity\":\"1\",\"S7_Name\":\"Reactor\"}",
+        "s7Name": "Reactor",
+        "topic": "",
+        "name": "Reactor Write",
+        "signalSetted": false,
+        "x": 2220,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5119d4a5.97195c",
+        "type": "comment",
+        "z": "9c7c9b84.b72108",
+        "name": "Emty Reactor",
+        "info": "Start Sequence",
+        "x": 1850,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "71f9a098.fdeac",
+        "type": "inject",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 1900,
+        "y": 780,
+        "wires": [
+            [
+                "cd73efdb.59a32"
+            ]
+        ]
+    },
+    {
+        "id": "cd73efdb.59a32",
+        "type": "s7comm read",
+        "z": "9c7c9b84.b72108",
+        "connection": "a8521463.9cb508",
+        "payload": "{\"S7_Type\":\"DB\",\"S7_DBnum\":\"61\",\"S7_Datatype\":\"R\",\"S7_Offset\":\"106\",\"S7_BitOffset\":\"0\",\"S7_Quantity\":\"1\",\"S7_Name\":\"Reactor\"}",
+        "s7Name": "Reactor",
+        "topic": "",
+        "name": "Reactor Read",
+        "signalSetted": false,
+        "none": "true",
+        "repeat": "",
+        "once": false,
+        "x": 2120,
+        "y": 800,
+        "wires": [
+            [
+                "fe8af93b.591f38",
+                "83a2dbbb.5a07c8"
+            ]
+        ]
+    },
+    {
+        "id": "a6425835.ea4fa8",
+        "type": "debug",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 2510,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "5fad610e.a6655",
+        "type": "function",
+        "z": "9c7c9b84.b72108",
+        "name": "Decrement value",
+        "func": "msg.payload = {\"value\":[msg.payload.value[0] - 0.1]}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 2060,
+        "y": 900,
+        "wires": [
+            [
+                "36b97230.ba05fe"
+            ]
+        ]
+    },
+    {
+        "id": "36b97230.ba05fe",
+        "type": "s7comm write",
+        "z": "9c7c9b84.b72108",
+        "connection": "a8521463.9cb508",
+        "payload": "{\"S7_Type\":\"DB\",\"S7_DBnum\":\"61\",\"S7_Datatype\":\"R\",\"S7_Offset\":\"106\",\"S7_BitOffset\":\"0\",\"S7_Quantity\":\"1\",\"S7_Name\":\"Reactor\"}",
+        "s7Name": "Reactor",
+        "topic": "",
+        "name": "Reactor Write",
+        "signalSetted": false,
+        "x": 2260,
+        "y": 900,
+        "wires": [
+            [
+                "2363b695.cbbeaa"
+            ]
+        ]
+    },
+    {
+        "id": "2363b695.cbbeaa",
+        "type": "delay",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": ".2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 2440,
+        "y": 900,
+        "wires": [
+            [
+                "cd73efdb.59a32"
+            ]
+        ]
+    },
+    {
+        "id": "c005a1ab.feda4",
+        "type": "comment",
+        "z": "9c7c9b84.b72108",
+        "name": "LIT03",
+        "info": "Start Sequence",
+        "x": 1830,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "1cd65184.a132de",
+        "type": "ui_button",
+        "z": "9c7c9b84.b72108",
+        "name": "Fill flow balance",
+        "group": "c2236d83.26c02",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Fill Flow Balance",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 120,
+        "y": 360,
+        "wires": [
+            [
+                "84c9799a.8b0e78"
+            ]
+        ]
+    },
+    {
+        "id": "7b7066e9.7a7518",
+        "type": "ui_button",
+        "z": "9c7c9b84.b72108",
+        "name": "Empty Flow Balance",
+        "group": "c2236d83.26c02",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Empty Flow Balance",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 140,
+        "y": 940,
+        "wires": [
+            [
+                "6a6bc975.308148"
+            ]
+        ]
+    },
+    {
+        "id": "603260b3.72053",
+        "type": "ui_button",
+        "z": "9c7c9b84.b72108",
+        "name": "Empty Waste Sludge",
+        "group": "8f052ddd.780f8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Empty Waste Sludge",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 1020,
+        "y": 800,
+        "wires": [
+            [
+                "22932aeb.6ea8d6"
+            ]
+        ]
+    },
+    {
+        "id": "857c16a.46b22e8",
+        "type": "ui_button",
+        "z": "9c7c9b84.b72108",
+        "name": "Empty Reacto",
+        "group": "aae92494.d6cf58",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Empty Reacto",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 1860,
+        "y": 840,
+        "wires": [
+            [
+                "cd73efdb.59a32"
+            ]
+        ]
+    },
+    {
+        "id": "52c8d920.d465f8",
+        "type": "switch",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "property": "payload.value[0]",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lt",
+                "v": "lit01HighLimit",
+                "vt": "global"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1430,
+        "y": 360,
+        "wires": [
+            [
+                "1b26fd8e.5868a2",
+                "65356972.d6d988"
+            ]
+        ]
+    },
+    {
+        "id": "4bb16249.341abc",
+        "type": "switch",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "property": "payload.value[0]",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lt",
+                "v": "lit03HighLimit",
+                "vt": "global"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2270,
+        "y": 400,
+        "wires": [
+            [
+                "6fba546d.6781dc",
+                "4461fccd.078d34"
+            ]
+        ]
+    },
+    {
+        "id": "7377b37d.880dac",
+        "type": "switch",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "property": "payload.value[0]",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "lit01LowLimit",
+                "vt": "global"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1550,
+        "y": 740,
+        "wires": [
+            [
+                "e5db6a4.d86f898",
+                "9c095b1c.0eaa38"
+            ]
+        ]
+    },
+    {
+        "id": "fe8af93b.591f38",
+        "type": "switch",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "property": "payload.value[0]",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "lit03LowLimit",
+                "vt": "global"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2310,
+        "y": 800,
+        "wires": [
+            [
+                "5fad610e.a6655",
+                "a6425835.ea4fa8"
+            ]
+        ]
+    },
+    {
+        "id": "310c79c2.3bbbb6",
+        "type": "ui_slider",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "label": "Level",
+        "tooltip": "",
+        "group": "c2236d83.26c02",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "",
+        "min": 0,
+        "max": "3",
+        "step": ".1",
+        "x": 230,
+        "y": 560,
+        "wires": [
+            [
+                "7edf4656.1a0168",
+                "b47b76b0.d986f8"
+            ]
+        ]
+    },
+    {
+        "id": "7edf4656.1a0168",
+        "type": "debug",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 380,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "b47b76b0.d986f8",
+        "type": "function",
+        "z": "9c7c9b84.b72108",
+        "name": "set level",
+        "func": "msg.payload = {\"value\":[msg.payload]}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 340,
+        "y": 600,
+        "wires": [
+            [
+                "d38c1e9c.3bb54"
+            ]
+        ]
+    },
+    {
+        "id": "d38c1e9c.3bb54",
+        "type": "s7comm write",
+        "z": "9c7c9b84.b72108",
+        "connection": "a8521463.9cb508",
+        "payload": "{\"S7_Type\":\"DB\",\"S7_DBnum\":\"61\",\"S7_Datatype\":\"R\",\"S7_Offset\":\"68\",\"S7_BitOffset\":\"0\",\"S7_Quantity\":\"1\",\"S7_Name\":\"Flow Balance Tank\"}",
+        "s7Name": "Flow Balance Tank",
+        "topic": "",
+        "name": "Flow Balance Write",
+        "signalSetted": false,
+        "x": 510,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5d98651a.53053c",
+        "type": "ui_slider",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "label": "Level",
+        "tooltip": "",
+        "group": "8f052ddd.780f8",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "",
+        "min": 0,
+        "max": "3",
+        "step": ".1",
+        "x": 1150,
+        "y": 560,
+        "wires": [
+            [
+                "1ae62b50.ad1245",
+                "8e4f2192.d449d"
+            ]
+        ]
+    },
+    {
+        "id": "1ae62b50.ad1245",
+        "type": "debug",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1300,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "8e4f2192.d449d",
+        "type": "function",
+        "z": "9c7c9b84.b72108",
+        "name": "set level",
+        "func": "msg.payload = {\"value\":[msg.payload]}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1260,
+        "y": 600,
+        "wires": [
+            [
+                "ab9a7e7e.bae32"
+            ]
+        ]
+    },
+    {
+        "id": "ab9a7e7e.bae32",
+        "type": "s7comm write",
+        "z": "9c7c9b84.b72108",
+        "connection": "a8521463.9cb508",
+        "payload": "{\"S7_Type\":\"DB\",\"S7_DBnum\":\"61\",\"S7_Datatype\":\"R\",\"S7_Offset\":\"30\",\"S7_BitOffset\":\"0\",\"S7_Quantity\":\"1\",\"S7_Name\":\"Wast Sludge Tank\"}",
+        "s7Name": "Wast Sludge Tank",
+        "topic": "",
+        "name": "Waste Sludge",
+        "signalSetted": false,
+        "x": 1460,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b851e196.87775",
+        "type": "ui_slider",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "label": "Level",
+        "tooltip": "",
+        "group": "aae92494.d6cf58",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "",
+        "min": 0,
+        "max": "3",
+        "step": ".1",
+        "x": 2070,
+        "y": 600,
+        "wires": [
+            [
+                "e237bcf0.7ae4e",
+                "7eafb64a.14dc88"
+            ]
+        ]
+    },
+    {
+        "id": "e237bcf0.7ae4e",
+        "type": "debug",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 2220,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "7eafb64a.14dc88",
+        "type": "function",
+        "z": "9c7c9b84.b72108",
+        "name": "set level",
+        "func": "msg.payload = {\"value\":[msg.payload]}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 2180,
+        "y": 640,
+        "wires": [
+            [
+                "ff3d80c7.4c4ad"
+            ]
+        ]
+    },
+    {
+        "id": "ff3d80c7.4c4ad",
+        "type": "s7comm write",
+        "z": "9c7c9b84.b72108",
+        "connection": "a8521463.9cb508",
+        "payload": "{\"S7_Type\":\"DB\",\"S7_DBnum\":\"61\",\"S7_Datatype\":\"R\",\"S7_Offset\":\"106\",\"S7_BitOffset\":\"0\",\"S7_Quantity\":\"1\",\"S7_Name\":\"Reactor\"}",
+        "s7Name": "Reactor",
+        "topic": "",
+        "name": "Reactor Write",
+        "signalSetted": false,
+        "x": 2340,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f950d8b5.191398",
+        "type": "delay",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 1400,
+        "y": 740,
+        "wires": [
+            [
+                "7377b37d.880dac"
+            ]
+        ]
+    },
+    {
+        "id": "495c6a41.61d134",
+        "type": "s7comm write",
+        "z": "9c7c9b84.b72108",
+        "connection": "a8521463.9cb508",
+        "payload": "{\"S7_Type\":\"DB\",\"S7_DBnum\":\"61\",\"S7_Datatype\":\"R\",\"S7_Offset\":\"30\",\"S7_BitOffset\":\"0\",\"S7_Quantity\":\"1\",\"S7_Name\":\"Wast Sludge Tank\"}",
+        "s7Name": "Wast Sludge Tank",
+        "topic": "",
+        "name": "Waste Sludge",
+        "signalSetted": false,
+        "x": 1400,
+        "y": 840,
+        "wires": [
+            [
+                "8b2247eb.126fe8",
+                "3cc94eda.b4cc52"
+            ]
+        ]
+    },
+    {
+        "id": "e99e0c84.6d25f",
+        "type": "function",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "func": "msg.payload = msg.payload.value[0];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1040,
+        "y": 540,
+        "wires": [
+            [
+                "5d98651a.53053c"
+            ]
+        ]
+    },
+    {
+        "id": "a453551.68feca8",
+        "type": "function",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "func": "msg.payload = msg.payload.value[0];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 110,
+        "y": 560,
+        "wires": [
+            [
+                "310c79c2.3bbbb6"
+            ]
+        ]
+    },
+    {
+        "id": "83a2dbbb.5a07c8",
+        "type": "function",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "func": "msg.payload = msg.payload.value[0];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1930,
+        "y": 600,
+        "wires": [
+            [
+                "b851e196.87775"
+            ]
+        ]
+    },
+    {
+        "id": "c623529c.f1d6f",
+        "type": "inject",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 2780,
+        "y": 400,
+        "wires": [
+            [
+                "fb4d7a79.c32e38"
+            ]
+        ]
+    },
+    {
+        "id": "fb4d7a79.c32e38",
+        "type": "s7comm read",
+        "z": "9c7c9b84.b72108",
+        "connection": "a8521463.9cb508",
+        "payload": "{\"S7_Type\":\"DB\",\"S7_DBnum\":\"65\",\"S7_Datatype\":\"R\",\"S7_Offset\":\"30\",\"S7_BitOffset\":\"0\",\"S7_Quantity\":\"1\",\"S7_Name\":\"Chlorine Tank\"}",
+        "s7Name": "Chlorine Tank",
+        "topic": "",
+        "name": "Chlorine Read",
+        "signalSetted": false,
+        "none": "true",
+        "repeat": "",
+        "once": false,
+        "x": 3000,
+        "y": 420,
+        "wires": [
+            [
+                "596f6bbd.c2e444",
+                "dfa8a4e3.b2bd38"
+            ]
+        ]
+    },
+    {
+        "id": "4ad042f0.3218bc",
+        "type": "debug",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 3390,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "4ec6b3ff.68e0ac",
+        "type": "comment",
+        "z": "9c7c9b84.b72108",
+        "name": "Chlorine Tank",
+        "info": "Start Sequence",
+        "x": 2770,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "4f6c002.bb6f5",
+        "type": "function",
+        "z": "9c7c9b84.b72108",
+        "name": "Increment value",
+        "func": "msg.payload = {\"value\":[msg.payload.value[0] + 0.1]}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 2930,
+        "y": 520,
+        "wires": [
+            [
+                "ab6597c3.001ca8"
+            ]
+        ]
+    },
+    {
+        "id": "ab6597c3.001ca8",
+        "type": "s7comm write",
+        "z": "9c7c9b84.b72108",
+        "connection": "a8521463.9cb508",
+        "payload": "{\"S7_Type\":\"DB\",\"S7_DBnum\":\"65\",\"S7_Datatype\":\"R\",\"S7_Offset\":\"30\",\"S7_BitOffset\":\"0\",\"S7_Quantity\":\"1\",\"S7_Name\":\"Chlorine Tank\"}",
+        "s7Name": "Chlorine Tank",
+        "topic": "",
+        "name": "Chlorine Write",
+        "signalSetted": false,
+        "x": 3140,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d3f608f8.f61ba8",
+        "type": "comment",
+        "z": "9c7c9b84.b72108",
+        "name": "Emty Reactor",
+        "info": "Start Sequence",
+        "x": 2770,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "4316ba77.c71ba4",
+        "type": "inject",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 2820,
+        "y": 800,
+        "wires": [
+            [
+                "5b6cc797.bd0e28"
+            ]
+        ]
+    },
+    {
+        "id": "5b6cc797.bd0e28",
+        "type": "s7comm read",
+        "z": "9c7c9b84.b72108",
+        "connection": "a8521463.9cb508",
+        "payload": "{\"S7_Type\":\"DB\",\"S7_DBnum\":\"65\",\"S7_Datatype\":\"R\",\"S7_Offset\":\"30\",\"S7_BitOffset\":\"0\",\"S7_Quantity\":\"1\",\"S7_Name\":\"Chlorine Tank\"}",
+        "s7Name": "Chlorine Tank",
+        "topic": "",
+        "name": "Chlorine Read",
+        "signalSetted": false,
+        "none": "true",
+        "repeat": "",
+        "once": false,
+        "x": 3040,
+        "y": 820,
+        "wires": [
+            [
+                "1f7b611b.a2b02f",
+                "dfa8a4e3.b2bd38"
+            ]
+        ]
+    },
+    {
+        "id": "ded33f8d.73c94",
+        "type": "debug",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 3430,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "df70d2b5.bf5fb",
+        "type": "function",
+        "z": "9c7c9b84.b72108",
+        "name": "Decrement value",
+        "func": "msg.payload = {\"value\":[msg.payload.value[0] - 0.1]}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 2980,
+        "y": 920,
+        "wires": [
+            [
+                "19d4e631.d442ea"
+            ]
+        ]
+    },
+    {
+        "id": "19d4e631.d442ea",
+        "type": "s7comm write",
+        "z": "9c7c9b84.b72108",
+        "connection": "a8521463.9cb508",
+        "payload": "{\"S7_Type\":\"DB\",\"S7_DBnum\":\"65\",\"S7_Datatype\":\"R\",\"S7_Offset\":\"30\",\"S7_BitOffset\":\"0\",\"S7_Quantity\":\"1\",\"S7_Name\":\"Chlorine Tank\"}",
+        "s7Name": "Chlorine Tank",
+        "topic": "",
+        "name": "Chlorine Write",
+        "signalSetted": false,
+        "x": 3180,
+        "y": 920,
+        "wires": [
+            [
+                "bc25dcf5.46f06"
+            ]
+        ]
+    },
+    {
+        "id": "bc25dcf5.46f06",
+        "type": "delay",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": ".2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 3360,
+        "y": 920,
+        "wires": [
+            [
+                "5b6cc797.bd0e28"
+            ]
+        ]
+    },
+    {
+        "id": "4c9457d3.7deb28",
+        "type": "comment",
+        "z": "9c7c9b84.b72108",
+        "name": "S500_LIT01",
+        "info": "Start Sequence",
+        "x": 2770,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "cb755677.bdd4d8",
+        "type": "ui_button",
+        "z": "9c7c9b84.b72108",
+        "name": "Empty Chlorine ",
+        "group": "aae92494.d6cf58",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Empty Chlorine ",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 2780,
+        "y": 860,
+        "wires": [
+            [
+                "5b6cc797.bd0e28"
+            ]
+        ]
+    },
+    {
+        "id": "596f6bbd.c2e444",
+        "type": "switch",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "property": "payload.value[0]",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lt",
+                "v": "lit03HighLimit",
+                "vt": "global"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 3190,
+        "y": 420,
+        "wires": [
+            [
+                "4f6c002.bb6f5",
+                "4ad042f0.3218bc"
+            ]
+        ]
+    },
+    {
+        "id": "1f7b611b.a2b02f",
+        "type": "switch",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "property": "payload.value[0]",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "lit03LowLimit",
+                "vt": "global"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 3230,
+        "y": 820,
+        "wires": [
+            [
+                "df70d2b5.bf5fb",
+                "ded33f8d.73c94"
+            ]
+        ]
+    },
+    {
+        "id": "c8b6531d.7c3f1",
+        "type": "ui_slider",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "label": "Level",
+        "tooltip": "",
+        "group": "8170901c.ac0cc",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "",
+        "min": 0,
+        "max": "3",
+        "step": ".1",
+        "x": 2990,
+        "y": 620,
+        "wires": [
+            [
+                "d15d880d.504628",
+                "fe55f9cf.7e0638"
+            ]
+        ]
+    },
+    {
+        "id": "d15d880d.504628",
+        "type": "debug",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 3140,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "fe55f9cf.7e0638",
+        "type": "function",
+        "z": "9c7c9b84.b72108",
+        "name": "set level",
+        "func": "msg.payload = {\"value\":[msg.payload]}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 3100,
+        "y": 660,
+        "wires": [
+            [
+                "503438ff.2888c8"
+            ]
+        ]
+    },
+    {
+        "id": "503438ff.2888c8",
+        "type": "s7comm write",
+        "z": "9c7c9b84.b72108",
+        "connection": "a8521463.9cb508",
+        "payload": "{\"S7_Type\":\"DB\",\"S7_DBnum\":\"65\",\"S7_Datatype\":\"R\",\"S7_Offset\":\"30\",\"S7_BitOffset\":\"0\",\"S7_Quantity\":\"1\",\"S7_Name\":\"Chlorine Tank\"}",
+        "s7Name": "Chlorine Tank",
+        "topic": "",
+        "name": "Chlorine Write",
+        "signalSetted": false,
+        "x": 3260,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dfa8a4e3.b2bd38",
+        "type": "function",
+        "z": "9c7c9b84.b72108",
+        "name": "",
+        "func": "msg.payload = msg.payload.value[0];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 2850,
+        "y": 620,
+        "wires": [
+            [
+                "c8b6531d.7c3f1"
+            ]
+        ]
+    }
+]

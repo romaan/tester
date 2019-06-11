@@ -23,6 +23,7 @@
     "node-red-contrib-fsm": "^0.0.6",
     "node-red-contrib-influxdb": "^0.2.1",
     "node-red-contrib-process-env": "^0.1.5",
+    "node-red-contrib-s7comm": "^1.1.6",
     "node-red-contrib-slack": "^0.1.2",
     "node-red-dashboard": "^2.6.2",
     "node-red-node-random": "^0.0.8"
